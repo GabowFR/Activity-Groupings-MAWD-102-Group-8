@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>My Vlog Player</title>
+  <style>
+    :root {
+      font-family: 'Inter', system-ui, sans-serif;
+      --bg: #fffb00;
+      --text: #111827;
+      --accent: #293c74;
+      --highlight: #4953e5;
+      --card: #fff;
+      --muted: #660000;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(135deg, var(--accent), var(--highlight));
+      color: white;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    h4 {
+      margin-top: 10px;
+      color: var(--accent);
+    }
+    picture {
+      margin: 20px;
+    }
+    picture img {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .video-section {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      background: var(--card);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .video-section:hover {
+      transform: scale(1.02);
+    }
+    video {
+      width: 100%;
+      max-height: 500px;
+      border-radius: 16px;
+      background: black;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    }
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .desc {
+      font-size: 15px;
+      color: var(--muted);
+    }
+    .controls {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    button {
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: var(--highlight);
+      transform: translateY(-2px);
+    }
+    .upload {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: var(--card);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .upload label {
+      font-size: 14px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    textarea {
+      resize: none;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: auto;
+      padding: 16px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>Rainver Mejillano</header>
+  <h4>MAWD 102</h4>
+  <picture>
+    <img src="https://edukasyon-production.s3.amazonaws.com/uploads/school/avatar/279/1429838716_STI.jpg" width="200" alt="picture">
+  </picture>
+
+  <div class="container">
+    <div class="video-section">
+      <video id="video" controls>
+        <source src="c:/Users/Rainver/Downloads/1b1f9e3c-f4f9-4208-99f8-e0744db0e8e2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="title" id="videoTitle">My First Vlog</div>
+      <div class="desc" id="videoDesc">Welcome to my vlog! Please enjoy watching. </div>
+      <div class="controls">
+        <button id="play">▶ Play</button>
+        <button id="pause">⏸ Pause</button>
+        <button id="rewind">⏮ Rewind</button>
+      </div>
+    </div>
+
+    <div class="upload">
+      <label for="videoFile"> You can also share your's here XD</label>
+      <input id="videoFile" type="file" accept="video/*">
+
+      <label for="descInput"> Video Description</label>
+      <textarea id="descInput" rows="3" placeholder="Write something about your vlog..."></textarea>
+    </div>
+  </div>
+
+  <footer> Made with love for vloggers </footer>
+
+  <script>
+    const video = document.getElementById('video');
+    const playBtn = document.getElementById('play');
+    const pauseBtn = document.getElementById('pause');
+    const rewindBtn = document.getElementById('rewind');
+    const videoFile = document.getElementById('videoFile');
+    const descInput = document.getElementById('descInput');
+    const videoDesc = document.getElementById('videoDesc');
+
+    playBtn.addEventListener('click', () => video.play());
+    pauseBtn.addEventListener('click', () => video.pause());
+    rewindBtn.addEventListener('click', () => video.currentTime = 0);
+
+    videoFile.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const url = URL.createObjectURL(file);
+        video.src = url;
+        video.play();
+      }
+    });
+
+    descInput.addEventListener('input', () => {
+      videoDesc.textContent = descInput.value || "Welcome to my vlog! Please enjoy watching. 💖";
+    });
+  </script>
+</body>
+</html>
+Sent
+Write to
+
+
+
+
