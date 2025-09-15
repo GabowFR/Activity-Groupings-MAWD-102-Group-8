@@ -61,3 +61,10 @@ video {
     border-radius: 15px;
     margin-bottom: 10px;
 }
+
+audio {
+    display: block;
+    border: 0;
+    border-radius: 0 ;
+    margin-bottom: 0 ;
+}
