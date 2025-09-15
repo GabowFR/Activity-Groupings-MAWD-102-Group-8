@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rosauro's Vlog</title>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fff01f, #5d96b1);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      }
+    header {
+      text-align: center;
+      background: rgb(255, 255, 255);
+      padding: 40px 20px;
+      border-radius: 10px;
+      color: black;
+      width: 90%;
+      max-width: 1200px;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeInTitle 5s ease-out forwards;
+      transform: translateY(-20px) scale(0.95);
+      box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+      }
+    @keyframes fadeInTitle {
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    .video-container {
+      width: 90%;
+      max-width: 1000px;
+      position: relative;
+      padding-bottom: 32%; /* 9:16 aspect ratio for YouTube Shorts */
+      height: 0;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%%;
+      border: none;
+    }
+    audio {
+      width: 90%;
+      max-width: 600px;
+      outline: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    header {
+      text-align: center;
+      background: rgb(255, 255, 255);
+      padding: 40px 20px;
+      border-radius: 10px;
+      color: black;
+      width: 50%%;
+      max-width: 1200px;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeInTitle 5s ease-out forwards;
+      transform: translateY(-20px) scale(0.95);
+      box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to my Vlog Website! Peter Rosauro from MAWD-102</h1>
+  </header>
+
+<div class="video-container">
+<iframe src="https://drive.google.com/file/d/1H_YUdwa3Ut_rO-O_E--wFj0D2NUn_9es/preview" 
+  width="640" 
+  height="480" 
+  allow="autoplay">
+</iframe>
+</div>
+
+<header>
+    <h1>Thank you! from MAWD-102 </h1>
+  </header>
+
+</body>
+</html>
