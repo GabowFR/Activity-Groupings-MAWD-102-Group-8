@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Vlogs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff0606, #2661b2); /* iba ibahin mo */
+      color: #471191;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(100deg, #b6271a, #4661b2);
+      border-bottom: 1px solid #743228;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      margin: 0;
+      font-weight: 600;
+      color: #262626;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .vlog-card {
+      background: #760542;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      border: 1px solid #1d50c6;
+      transition: transform 0.2s ease;
+    }
+
+    .vlog-card:hover {
+      transform: scale(1.01);
+    }
+
+    /* header ko */
+    .vlog-header {
+      display: flex;
+      align-items: center;
+      padding: 12px 15px;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+    }
+
+    .profile-pic {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #bbb;
+      margin-right: 10px;
+    }
+
+    .username {
+      font-weight: 600;
+      font-size: 0.95em;
+      color: #262626;
+    }
+
+    /* Video like post content */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .content {
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    .content strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .audio-player {
+      width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1> Group daven </h1>
+  </header>
+
+  <div class="container">
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Daven Dharyl N. Kilat</span>
+      </div>
+      <div class="video-container">
+        <iframe src=" c:\Users\Rainver\Downloads\545580203_25538724962384089_1364275018845732498_n.mp4   " allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src=" c:\Users\Rainver\Downloads\545580203_25538724962384089_1364275018845732498_n.mp4 " type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Josh Drei Z Cruz</span>
+      </div>
+      <div class="video-container">
+        <iframe src=" c:\Users\Rainver\Downloads\546077938_31223223030655432_5833701390188711535_n.mp4      " allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="      c:\Users\Rainver\Downloads\546077938_31223223030655432_5833701390188711535_n.mp4      " type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Ralph Cj B. Paulino</span>
+      </div>
+      <div class="video-container">
+        <iframe src="  c:\Users\Rainver\Downloads\bf5c79a0-6e1e-4e6d-b977-efd689547678.mp4     " allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="    c:\Users\Rainver\Downloads\bf5c79a0-6e1e-4e6d-b977-efd689547678.mp4   " type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Peter Gabrielle Tapit Rosauro</span>
+      </div>
+      <div class="video-container">
+        <iframe src="   c:\Users\Rainver\Downloads\544637225_24879944691613675_8118667362159105046_n.mp4     " allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="   c:\Users\Rainver\Downloads\544637225_24879944691613675_8118667362159105046_n.mp4      " type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Rainver Mejilano</span>
+      </div>
+      <div class="video-container">
+        <iframe src=" c:\Users\Rainver\Downloads\1b1f9e3c-f4f9-4208-99f8-e0744db0e8e2.mp4    " allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="  c:\Users\Rainver\Downloads\1b1f9e3c-f4f9-4208-99f8-e0744db0e8e2.mp4  " type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">MAWD epic video's</span>
+      </div>
+      <div class="video-container">
+        <iframe src=" c:\Users\Rainver\Downloads\aa6fd2bb-c39c-4ae1-96b2-fcaff8934db6.mp4   " allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="  \Users\Rainver\Downloads\aa6fd2bb-c39c-4ae1-96b2-fcaff8934db6.mp4  " type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Our Vlogs. All rights reserved.
+  </footer>
+
+</body>
+</html>
