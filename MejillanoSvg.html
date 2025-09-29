@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CCC | Creative Corporate Concepts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #d0f80c;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff6600;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 50px 20px;
+    }
+
+    .service-cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 200px;
+      background: #354087;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #0077cc;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    html {
+      scroll-behavior: smooth; /* smooth scrolling */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CCC</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to CCC - Coscading style Sheets</h1>
+    <p>Innovating business solutions for a smarter tomorrow.</p>
+    <a href="#contact" class="cta-button">Get in Touch</a>
+    <a href="c:\Users\Rainver\Downloads\sti.webp" target="_blank" class="cta-button">Our Image</a>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>    CCC is a forward-thinking company dedicated to delivering cutting-edge solutions in technology, design, and strategy. We specialize in helping businesses modernize their operations, strengthen their digital presence, and unlock new opportunities for growth. By combining expert consulting, user-centered design, and scalable software development, CCC empowers organizations to stay competitive in a rapidly changing digital landscape.
+Sent
+Write to
+   .</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Expert advice to elevate your business strategy.</p>
+      </div>
+      <div class="card">
+        <h3>Design</h3>
+        <p>Modern, user-focused design for web and mobile.</p>
+      </div>
+      <div class="card">
+        <h3>Development</h3>
+        <p>Robust and scalable software solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; Please support our work, CCC</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you xo much for contacting us! We’ll get back to you shortly. <3");
+    });
+  </script>
+</body>
+</html>
